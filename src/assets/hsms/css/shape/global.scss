@@ -1,0 +1,413 @@
+/* 正方形 */
+.square {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+/* 圆形 */
+.perfect-circle {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+/* 圆圈 */
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 100px;
+  /* -webkit-border-radius: 10px; */
+  /* -moz-border-radius: 100px; */
+  border: 3px red solid;
+}
+
+/* 椭圆 */
+.ellipse {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  border-radius: 50px/25px;
+  /*-webkit-border-radius: 100px/50px;*/
+  /*-moz-border-radius: 100px/50px;*/
+}
+
+/* 上三角 */
+.triangle-up {
+  display: inline-block;
+  vertical-align: sub;
+  width: 0px;
+  height: 0px;
+  color: white;
+  text-align: center;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 17px solid red;
+  /*-webkit-border-top-left-radius: 50px solid transparent;*/
+  /*-webkit-border-top-right-radius: 50px solid transparent;*/
+  /*-webkit-border-bottom-left-radius: 100px solid red;*/
+  /*-webkit-border-bottom-right-radius: 100px solid red;*/
+}
+
+/* 下三角 */
+.triangle-down {
+  width: 0px;
+  height: 0px;
+  color: white;
+  text-align: center;
+  border-top: 100px solid red;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+/* 左三角 */
+.triangle-left {
+  width: 0px;
+  height: 0px;
+  color: white;
+  text-align: center;
+  border-top: 50px solid transparent;
+  border-left: 100px solid red;
+  border-bottom: 50px solid transparent;
+}
+
+/* 右三角 */
+.triangle-right {
+  width: 0px;
+  height: 0px;
+  color: white;
+  text-align: center;
+  border-top: 50px solid transparent;
+  border-right: 100px solid red;
+  border-bottom: 50px solid transparent;
+}
+
+/* 顶左三角 */
+.triangle-topleft {
+  width: 0px;
+  height: 0px;
+  border-top: 100px solid red;
+  border-right: 100px solid transparent;
+}
+
+/* 顶右三角 */
+.triangle-topright {
+  width: 0px;
+  height: 0px;
+  border-top: 100px solid red;
+  border-left: 100px solid transparent;
+}
+
+/* 底左三角 */
+.triangle-bottomleft {
+  width: 0px;
+  height: 0px;
+  border-bottom: 100px solid red;
+  border-right: 100px solid transparent;
+}
+
+/* 底右三角 */
+.triangle-bottomright {
+  width: 0px;
+  height: 0px;
+  border-bottom: 100px solid red;
+  border-left: 100px solid transparent;
+}
+
+/* 平行四边形 */
+.parallelogram {
+  width: 200px;
+  height: 150px;
+  margin-left: 30px;
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(200deg);
+  -o-transform: skew(200deg);
+  background-color: red;
+}
+
+/* 梯形 */
+.trapezoid {
+  border-bottom: 100px solid red;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  width: 100px;
+  height: 0px;
+}
+
+/* 五角星 */
+.star-five {
+  width: 0;
+  height: 0;
+  color: red;
+  margin: 2px 0;
+  position: relative;
+  display: block;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 7px solid red;
+  -moz-transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+}
+
+.star-five:before {
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 8px solid red;
+  position: absolute;
+  top: -5px;
+  left: -6.5px;
+  color: white;
+  display: block;
+  content: "";
+  -moz-transform: rotate(-35deg);
+  -webkit-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+}
+
+.star-five:after {
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  color: red;
+  top: 0.3px;
+  left: -10.5px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 7px solid red;
+  content: "";
+  -moz-transform: rotate(-70deg);
+  -webkit-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  -o-transform: rotate(-70deg);
+}
+
+/* 六角形 */
+.star-six {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 15px solid red;
+  position: relative;
+}
+
+.star-six:after {
+  width: 0;
+  height: 0;
+  border-top: 15px solid red;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: -8px;
+}
+
+/* 五边形 */
+.pentagon {
+  box-sizing:content-box !important;
+  margin-top: 8px;
+  width: 10px;
+  position: relative;
+  border-width: 10px 3px 0;
+  border-style: solid;
+  border-color: red transparent;
+  vertical-align: sub;
+}
+
+.pentagon:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -17px;
+  left: -3.6px;
+  border-width: 0 9px 7px;
+  border-style: solid;
+  border-color: transparent transparent red;
+}
+
+/* 六边形 */
+.hexagon {
+  width: 16px;
+  height: 8px;
+  background-color: red;
+  position: relative;
+}
+
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 5px solid red;
+}
+
+.hexagon:after {
+  content: "";
+  left: 0;
+  width: 0;
+  height: 0;
+  bottom: -5px;
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 5px solid red;
+}
+
+/* 八边形 */
+.octagon {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+}
+
+.octagon:before {
+  width: 42px;
+  height: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  border-left: 29px solid #eee;
+  border-right: 29px solid #eee;
+  border-bottom: 29px solid red;
+}
+
+.octagon:after {
+  width: 42px;
+  height: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  border-left: 29px solid #eee;
+  border-right: 29px solid #eee;
+  border-top: 29px solid red;
+}
+
+/* 心形 */
+.heart {
+  width: 20px;
+  height: 18px;
+  position: relative;
+  vertical-align: bottom;
+}
+
+.heart:before,
+.heart:after {
+  width: 10px;
+  height: 16px;
+  left: 10px;
+  top: 0;
+  background-color: red;
+  position: absolute;
+  content: "";
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  tansform-origin: 0 100%;
+}
+
+.heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+/* 钻石 */
+.diamond {
+  width: 50px;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent red transparent;
+  border-width: 0 25px 25px 25px;
+  position: relative;
+  margin: 20px 0 50px 0;
+}
+
+.diamond:after {
+  width: 0;
+  height: 0;
+  top: 25px;
+  left: -25px;
+  border-style: solid;
+  border-color: red transparent transparent transparent;
+  border-width: 70px 50px 0 50px;
+  position: absolute;
+  content: "";
+}
+
+/* 太极 */
+.yin-yang {
+  width: 96px;
+  height: 48px;
+  background-color: #fff;
+  border-color: red;
+  border-style: solid;
+  border-width: 2px 2px 50px 2px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.yin-yang:before {
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 0;
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  border: 18px solid red;
+  border-radius: 100%;
+}
+
+.yin-yang:after {
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  background-color: red;
+  border: 18px solid #fff;
+  border-radius: 100%;
+  content: "";
+  position: absolute;
+}

@@ -1,0 +1,41 @@
+.image {
+  width: 100%;
+}
+
+.w60 {
+  width: 60px !important;
+}
+
+.w80 {
+  width: 80px !important;
+}
+
+.w100 {
+  width: 100px !important;
+}
+
+.w120 {
+  width: 120px !important;
+}
+
+.w150 {
+  width: 150px !important;
+}
+
+.w200 {
+  width: 200px !important;
+}
+
+.w740 {
+  width: 740px !important;
+}
+
+.el-color-dropdown__main-wrapper,
+.el-color-alpha-slider {
+  display: none;
+}
+
+.el-color-predefine__color-selector {
+  padding: 2px;
+  border: 1px solid #ddd;
+}

@@ -1,0 +1,13 @@
+/deep/ .el-dialog{
+  border-radius: 15px;
+}
+
+/deep/ .el-dialog__header, .el-dialog__footer{
+  text-align: center;
+}
+
+/deep/ .el-dialog__footer {
+  .el-button {
+    margin: 0 20px;
+  }
+}

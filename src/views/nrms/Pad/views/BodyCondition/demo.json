@@ -1,0 +1,156 @@
+{
+  "patientId": "0fe01b242df04e2fb323a3028f197e2c",
+  "recordDate": "2019-08-20 16:51:36",
+  "deptId": "7fb481c5706111e9945d286ed488c65e",
+  "itemHour": 4,
+  "itemType": 1,
+  "extendList": [
+    {
+      "signSummaryType": 1,
+      "signId": "2a414fd5908e43c9baab81366afda41",
+      "applyId": "bc50c7f3f8cb43cab105aea21eb4e0be",
+      "applyValue": "36",
+      "phValue": "",
+      "itemValueType": "yw",
+      "itemCode": "tiwen"
+    },
+    {
+      "signSummaryType": 1,
+      "signId": "8e9474fedb6347b5adaba2ea16e8a03c",
+      "applyId": "bf25aaece6834c6890fe96585686be01",
+      "applyValue": "",
+      "phValue": "",
+      "itemValueType": "",
+      "itemCode": "maibo"
+    },
+    {
+      "signSummaryType": 1,
+      "signId": "534808e51e9c428b9e8bd2f1ec856f43",
+      "applyId": "351bd49a897b4947b9610745360e2585",
+      "applyValue": "",
+      "phValue": "",
+      "itemValueType": "",
+      "itemCode": "xinlv"
+    },
+    {
+      "signSummaryType": 1,
+      "signId": "f7abe0832e44403d95d9d0c92bc50834",
+      "applyId": "a484e377f9984734bac88a8e290d9903",
+      "applyValue": "",
+      "phValue": "",
+      "itemValueType": "",
+      "itemCode": "huxi"
+    },
+    {
+      "signSummaryType": 1,
+      "signId": "9a94933c035f472c935b45b2b428c8ac",
+      "applyId": "e4f5e8c5799b43df902182aa4cef9bc2",
+      "applyValue": "",
+      "phValue": "",
+      "itemValueType": "",
+      "itemCode": "tengtongdengji"
+    },
+    {
+      "signSummaryType": 1,
+      "signId": "93de0cb15a824696918e695be58c9972",
+      "applyId": "e036fabc5bf44e2db6f650ad2c793e80",
+      "applyValue": "",
+      "phValue": "",
+      "itemValueType": "",
+      "itemCode": "shousuoya"
+    },
+    {
+      "signSummaryType": 1,
+      "signId": "e997fc73b5754f708c5645689c83d831",
+      "applyId": "3ab61ed168664764b861a011eff557d8",
+      "applyValue": "",
+      "phValue": "",
+      "itemValueType": "",
+      "itemCode": "shuzhangya"
+    },
+    {
+      "signSummaryType": 1,
+      "signId": "8e26339fde73403baf3b0de9c36fe823",
+      "applyId": "fbdd2edf6c814deabc78ee47c2a97d44",
+      "applyValue": "",
+      "phValue": "",
+      "itemValueType": "",
+      "itemCode": "niaoliang"
+    },
+    {
+      "signSummaryType": 1,
+      "signId": "d954238467264d08a32c77b9d7cfcea7",
+      "applyId": "98f4ccc942df4c648e3d4b3618f3854d",
+      "applyValue": "12",
+      "phValue": "",
+      "itemValueType": "",
+      "itemCode": "yozhixinashi"
+    },
+    {
+      "signSummaryType": 1,
+      "signId": "43002b7ec0c14c1ca05bcfce76282541",
+      "applyId": "b244e6fe2b5a4a3eb5daba7eb6c3d3cb",
+      "applyValue": "",
+      "phValue": "",
+      "itemValueType": "",
+      "itemCode": "shizhongxianshi"
+    },
+    {
+      "signSummaryType": 1,
+      "signId": "c38feb3fb1f84c819d91029cda6f1cc6",
+      "applyId": "b2bd6fe02020488e882ced5e85fcf83a",
+      "applyValue": "",
+      "phValue": "",
+      "itemValueType": "",
+      "itemCode": "chuliang"
+    },
+    {
+      "signSummaryType": 1,
+      "signId": "996be0afd54e42bba9ac00230b748140",
+      "applyId": "54794d5a7b704181b8d8091a84a76427",
+      "applyValue": "60",
+      "phValue": "",
+      "itemValueType": "",
+      "itemCode": "tizhong"
+    },
+    {
+      "signSummaryType": 1,
+      "signId": "8c3ffa95e1024caa95e7c6d6ff604688",
+      "applyId": "e3b62ce5b9ac442d9c394dfdfaf39c7f",
+      "applyValue": "",
+      "phValue": "",
+      "itemValueType": "",
+      "itemCode": "dabiancishu"
+    },
+    {
+      "signSummaryType": 1,
+      "signId": "718119daf2054de5b82cc660ebb61bdd",
+      "applyId": "f62e4eb14c24483fa4297e36f9962908",
+      "applyValue": "",
+      "phValue": "",
+      "itemValueType": "",
+      "itemCode": "shiozng"
+    },
+    {
+      "signSummaryType": 1,
+      "signId": "bfa8b56918504740909a50796aa02f9d",
+      "applyId": "c66012a7e7574dc5a8d924451b637bd1",
+      "applyValue": "",
+      "phValue": "",
+      "itemValueType": "",
+      "itemCode": "111"
+    }
+  ],
+  "glucometerInfo": {
+    "measurePeriod": "12",
+    "measureResult": "tttt",
+    "glucometerNumber": "123456",
+    "nurseName": "wt"
+  },
+  "braceletRecordInfo": {
+    "energyConsumption": "5589555",
+    "stepNumber": "111111",
+    "walkingDistance": "999999",
+    "heartRate": "555555"
+  }
+}

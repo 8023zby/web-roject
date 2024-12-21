@@ -1,0 +1,241 @@
+@charset "utf-8";
+/**
+ * 文件描述：娱乐公共样式====之前的大哥样式写的太乱，项目时间紧，没办法，只能强行覆盖了
+ * 创建时间：2020/7/24 8:18
+ * 创建人：Administrator
+ *
+*/
+$tdBgColor: var(--IeBrower, #ffffff);
+.yule-main{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  // 左侧树
+  .aside{
+    width: 200px !important;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    .typeaside{
+      width: 100%;
+      padding: 0;
+      .type-tit{
+        font-size: 16px;
+        padding: 10px 6px;
+      }
+      .type-btn-group{
+        padding: 10px;
+      }
+      .type-List{
+        height: 40px;
+        line-height: 40px;
+        .l-name{
+          line-height: 40px;
+          padding-left: 10px;
+          width: 150px;
+          text-overflow:ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          cursor: pointer;
+        }
+        .l-action{
+          display: flex;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .el-button--primary, .el-button--primary:focus, .el-button--primary:visited{
+    background-color: #1e87f0!important;
+    border-color: #1e87f0!important;
+  }
+  .el-button--warning, .el-button--warning:focus, .el-button--warning:visited{
+    background-color: #ff9d00!important;
+    border-color: #ff9d00!important;
+  }
+  .el-button--danger.is-disabled, .el-button--danger.is-disabled:active, .el-button--danger.is-disabled:focus, .el-button--danger.is-disabled:hover, .el-button--primary.is-disabled, .el-button--primary.is-disabled:active, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:hover, .el-button--warning.is-disabled, .el-button--warning.is-disabled:active, .el-button--warning.is-disabled:focus, .el-button--warning.is-disabled:hover{
+    background-color: #b4b4b4!important;
+    border-color: #b4b4b4!important;
+  }
+  // 按钮样式 ==== END
+
+  .main-panel{
+    position: absolute;
+    left: 200px;
+    .edit-panel{
+      height: 54px;
+      padding-left: 16px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-top: 13px;
+    }
+    width: calc(100% - 200px) !important;
+    height: 100%;
+    .div-table{
+      height:76%;
+      overflow: hidden;
+    }
+    .el-table{
+      font-size: 14px !important;
+    }
+    .el-table td{
+      position: static;
+    }
+    .el-table--striped .el-table__body tr.el-table__row--striped>td {
+      @if $tdBgColor == #ffffff {
+        background: #FCFCFC;
+      }
+    }
+    // hover 样式
+    .el-table--enable-row-hover .el-table__body tr:hover > td{
+      background: $tdBgColor !important;
+    }
+    .hover-row{
+      td {
+        background: $tdBgColor !important;
+      }
+      transform: translate3d(0, 0, 0);
+      box-shadow: 0px 0px 6px 0px rgba(124,124,124,0.3);
+    }
+    tr:hover{
+      transform: translate3d(0, 0, 0);
+      box-shadow: 0px 0px 6px 0px rgba(124,124,124,0.3);
+    }
+    // 正常搜索、添加等动作按钮
+    .el-button--small, .el-button--small.is-round {
+      font-size: 14px;
+      height: 28px;
+      padding: 5px 10px;
+      min-width: 78px;
+      border-radius: 2px;
+    }
+    .el-button--text{
+      min-width: 30px !important;
+    }
+    .el-form{
+    }
+    .el-form-item {
+      box-sizing: border-box;
+      height: 58px;
+      margin-bottom: 0px;
+      padding-top: 13px;
+      margin-right: 24px;
+    }
+    .search-form{
+      margin-left: 20px;
+      .el-form-item__label{
+        color: #666666;
+        line-height: 34px;
+        padding: 0 8px 0 0;
+      }
+      .el-input--small .el-input__inner {
+        height: 34px;
+        line-height: 34px;
+        width: 182px;
+      }
+      .vue-treeselect{
+        width: 182px !important;
+      }
+      .is-reverse{
+        color: #1e87f0 !important;
+      }
+    }
+    .typt-search-btn{
+      margin-left: 16px;
+    }
+    .typt-search-btn button:nth-child(2){
+      margin-left: 11px;
+    }
+    .el-table__header{
+      border-top: 1px solid #e6e6e6;
+    }
+    hr{
+      height:1px;
+      border:none;
+      background-color: #e6e6e6;
+      margin-block-start: 0em !important;
+      margin-block-end: 0em !important;
+    }
+    .el-table--small {
+      font-size: 14px !important;
+    }
+    .el-table th {
+      font-weight: normal !important;
+    }
+    .el-table th>.cell{
+      font-size: 16px;
+      color: #333333;
+    }
+    .el-table__header th{
+      background: #F7F7F7;
+      padding: 3px 0 !important;
+      height: 48px;
+    }
+    .is-group th{
+      padding: 3px 0 !important;
+      height: 24px;
+    }
+    .is-group th>.cell{
+      font-size: 14px;
+    }
+    .el-table td {
+      padding: 3px 0 !important;
+      height: 48px;
+    }
+  }
+
+  .el-dialog__wrapper .el-dialog__header{
+    padding: 0 0 0 24px;
+    height: 46px;
+    line-height: 46px;
+    text-align: left;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .el-pagination{
+    button {
+      min-width: 20px;
+      height: 20px;
+      line-height: 20px;
+      vertical-align: middle;
+      margin: 0 8px;
+      border-radius: 2px;
+      padding: 0;
+      color: #FFF;
+      background-color: #C0C4CC;
+    }
+    .el-select .el-input .el-input__inner {
+      height: 20px;
+    }
+    .el-select .el-input .el-input__inner {
+      height: 20px;
+    }
+    .el-pagination__editor.el-input .el-input__inner {
+      width: 20px;
+      height: 20px;
+    }
+    .btn-prev,.btn-next{
+      margin-top: 4px;
+    }
+    .el-pager {
+      margin-top: 4px;
+      li {
+        min-width: 20px;
+        height: 20px;
+        line-height: 20px;
+        vertical-align: middle;
+        margin: 0 8px;
+        border-radius: 2px;
+        color: #666;
+        font-size: 12px;
+        font-weight: normal;
+
+        &.active {
+          color: #fff;
+          background-color: #1e87f0;
+        }
+      }
+    }
+  }
+}

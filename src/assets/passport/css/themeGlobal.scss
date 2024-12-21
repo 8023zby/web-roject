@@ -1,0 +1,65 @@
+$data-theme-blue: #1E87F0;
+$data-theme-orange: #FF9D11;
+$data-theme-green: #009995;
+$data-theme-purple: #743B8F;
+$data-theme-red: #E0241B;
+.data-theme-blue {
+  .passport_logo, .passport_first_menu{
+    background-color: $data-theme-blue;
+  }
+  .passport_second_menu li .is-active,.passport-second-menu.is-active{
+    background: rgba(30, 135, 240, 0.2);
+    color: $data-theme-blue !important;
+  }
+  .passport_nav_open{
+    color: $data-theme-blue !important;
+  }
+}
+.data-theme-orange {
+  .passport_logo, .passport_first_menu{
+    background-color: $data-theme-orange;
+  }
+  .passport_second_menu li .is-active,.passport-second-menu.is-active{
+    background: rgba(255, 157, 17, 0.1);
+    color: $data-theme-orange !important;
+  }
+  .passport_nav_open{
+    color: $data-theme-orange !important;
+  }
+}
+.data-theme-green {
+  .passport_logo, .passport_first_menu{
+    background-color: $data-theme-green;
+  }
+  .passport_second_menu li .is-active,.passport-second-menu.is-active{
+    background: rgba(0, 153, 149, 0.1);
+    color: $data-theme-green !important;
+  }
+  .passport_nav_open{
+    color: $data-theme-green !important;
+  }
+}
+.data-theme-purple {
+  .passport_logo, .passport_first_menu{
+    background-color: $data-theme-purple;
+  }
+  .passport_second_menu li .is-active,.passport-second-menu.is-active{
+    background: rgba(116, 59, 143, 0.1);
+    color: $data-theme-purple !important;
+  }
+  .passport_nav_open{
+    color: $data-theme-purple !important;
+  }
+}
+.data-theme-red {
+  .passport_logo, .passport_first_menu{
+    background-color: $data-theme-red;
+  }
+  .passport_second_menu li .is-active,.passport-second-menu.is-active{
+    background: rgba(224, 36, 27, 0.1);
+    color: $data-theme-red !important;
+  }
+  .passport_nav_open{
+    color: $data-theme-red !important;
+  }
+}

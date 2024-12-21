@@ -1,0 +1,142 @@
+/*******radio,checkbox***************/
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner,
+.el-radio__input.is-checked .el-radio__inner{
+  background-color: #1e87f0;
+  border-color: #1e87f0;
+}
+.el-radio__input.is-checked + .el-radio__label,
+.el-checkbox__input.is-checked + .el-checkbox__label{
+  color: #1e87f0;
+}
+.el-checkbox__input.is-disabled+span.el-checkbox__label,
+.el-radio__input.is-disabled+span.el-radio__label {
+  color: #C0C4CC;
+}
+.el-checkbox__input.is-disabled .el-checkbox__inner, .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner,
+.el-radio__input.is-disabled .el-radio__inner, .el-radio__input.is-disabled.is-checked .el-radio__inner {
+  background-color: #EDEDED;
+  border-color: #DADBDF;
+  color: #A9A9A9;
+}
+.el-radio__inner::after{
+  width: 6px;
+  height: 6px;
+}
+// input 框
+.el-input.is-disabled .el-input__inner {
+  background-color: #EDEDED;
+  border-color: #EDEDED;
+}
+.el-select {
+  .el-input.is-disabled .el-input__inner {
+    border-color: #D8D9DE;
+  }
+}
+.el-icon-circle-close:hover{
+  color: #1C87F0 !important;
+}
+.is-reverse{
+  color: #1e87f0 !important;
+}
+.el-input__inner{
+  color: #333333;
+}
+// 时间选择框
+.el-time-spinner__item.active:not(.disabled) {
+  color: #1E87F0;
+}
+.el-picker-panel{
+  .in-range div{
+    background-color: #C8E3FF !important;
+  }
+}
+textarea{
+  font-family: Arial;
+  font-size: 14px;
+}
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+  background-color: #E0EFFF;
+  color: #1e87f0;
+}
+// 消息提醒圆角以及颜色
+.el-message.el-message--success,
+.el-message.el-message--warning,
+.el-message.el-message--error,
+.el-message.el-message--info{
+  border-radius: 50px;
+}
+.el-message.el-message--success{
+  background-color: #CAF5DA;
+  border-color: #CAF5DA;
+  .el-message__content{
+    color: #10CE65;
+  }
+  .el-icon-success {
+    color: #10CE65;
+  }
+}
+.el-message.el-message--warning{
+  background-color: #FFEACF;
+  border-color: #FFEACF;
+  .el-message__content{
+    color: #FE9C00;
+  }
+  .el-icon-warning {
+    color: #FE9C00;
+  }
+}
+.el-message.el-message--error{
+  background-color: #FFE2E4;
+  border-color: #FFE2E4;
+  .el-message__content{
+    color: #F36B6A;
+  }
+  .el-icon-error {
+    color: #F36B6A;
+  }
+}
+.el-message.el-message--info{
+  background-color: #EEF2FD;
+  border-color: #EEF2FD;
+  .el-message__content{
+    color: #666666;
+  }
+  .el-icon-info {
+    color: #666666;
+  }
+}
+/*******选择树样式************/
+.vue-treeselect{
+  min-height: 34px !important;
+}
+.vue-treeselect__control{
+  height: 34px !important;
+}
+.vue-treeselect__placeholder, .vue-treeselect__single-value{
+  line-height: 32px !important;
+}
+.deptCls .el-form-item__content{
+  line-height: normal !important;
+}
+.deptAddCls .el-form-item__content{
+  line-height: normal !important;
+}
+/**====tab标签页=====*/
+.el-tabs--card{
+  .el-tabs__header{
+    padding-left: 20px;
+    padding-top: 10px;
+    .el-tabs__item{
+      height: 38px;
+      line-height: 38px;
+      color: #333333;
+    }
+    .el-tabs__nav {
+      border-radius: 2px 2px 0 0 !important;
+    }
+    .is-active{
+      color: #1e87f0;
+    }
+  }
+}

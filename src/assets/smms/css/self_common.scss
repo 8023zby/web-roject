@@ -1,0 +1,497 @@
+/**** 查询条件 ****/
+.query-items {
+  /* tree 组件 */
+  /deep/ .vue-treeselect__control {
+    width: auto;
+    color: #606266;
+  }
+
+  /deep/ .el-form-item__content > div.el-input,
+  /deep/ .el-form-item__content > div.el-select,
+  /deep/ .el-form-item__content > div.vue-treeselect {
+    width: 182px;
+  }
+}
+
+/**** 按钮栏 ****/
+.tool-bar {
+  padding: 12px;
+}
+.tool-container{
+  padding: 20px 30px 10px 10px;
+  /deep/ .el-button {
+    border-radius: 2px !important;
+    font-size: 14px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    min-width: 78px;
+  }
+}
+
+/**** 查询条件和按钮栏的按钮 ****/
+.query-items,
+.tool-bar {
+  /deep/ .el-button {
+    border-radius: 2px !important;
+    font-size: 14px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    min-width: 78px;
+  }
+}
+
+/**** 主列表 ****/
+.list-page-new {
+  height: 100%;
+
+  // 按钮样式 ==== START
+  .el-input--mini .el-input__inner{
+    height: 32px;
+    line-height: 32px;
+  }
+  .el-button--mini, .el-button--mini.is-round{
+    padding: 8px 15px!important;
+    font-size: 14px !important;
+  }
+  .el-button-radius{
+    border-radius: 4px!important;
+  }
+  // 按钮样式 ==== END
+  .el-header {
+    padding: 0;
+
+    /* 查询条件容器 */
+    > div:first-child {
+      position: relative;
+
+      &:not(.tool-container) {
+        padding-right: 40px;
+        min-height: 54px;
+      }
+
+      /* 三角 */
+      .query-show-btn {
+        color: #1b7ad8;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 14px;
+        transition: transform 0.3s;
+        transform: rotateZ(0);
+        z-index: 5;
+
+        &.is-show {
+          transition: transform 0.3s;
+          transform: rotateZ(180deg);
+        }
+      }
+
+      /* 条件容器 */
+      .query-items-container {
+        box-sizing: border-box;
+        padding: 10px 30px 10px 10px;
+        background-color: #fff;
+        position: absolute;
+        height: 60px;
+        width: 100%;
+        overflow: hidden;
+        z-index: 4;
+        border-bottom:1px solid rgba(239,239,239,1);
+      }
+
+      .query-items-container2 {
+        &:hover, &.show-all {
+          height: auto;
+          max-height: 200px;
+          overflow: visible;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+    /* 条件容器 */
+    >.query-items-container {
+      box-sizing: border-box;
+      padding: 10px 30px 10px 10px;
+      background-color: #fff;
+      position: absolute;
+      min-height: 60px;
+      width: 100%;
+      overflow: hidden;
+      z-index: 4;
+      border-bottom:1px solid rgba(239,239,239,1);
+      .el-form-item{
+        margin-bottom: 1px;
+      }
+    }
+
+    /*按钮容器*/
+    > div:last-child {
+      display: flex;
+
+      > div:first-child {
+        flex: 3;
+        text-align: left;
+
+        .el-button:first-child {
+          margin-right: 20px;
+        }
+      }
+
+      > div:last-child {
+        flex: 4;
+        text-align: right;
+
+        .el-button:last-child {
+          // margin-left: 20px;
+        }
+      }
+    }
+
+  }
+
+  .header-hastitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 14px;
+    padding: 10px 0 0 28px;
+    margin-bottom: 20px;
+    // 标题
+    .title {
+      position: relative;
+      min-height: 35px !important;
+      &:before {
+        content: ' ';
+        width: 4px;
+        height: 15px;
+        border-radius: 2px;
+        background-color: #13ce66;
+        position: absolute;
+        left: -12px;
+        top: 4px;
+      }
+      .span-right-btn{
+        float: right;
+      }
+    }
+  }
+  .hastitle-elform{
+    padding: 0 15px;
+    .el-form-item{
+      margin-bottom: 2px;
+    }
+  }
+  // 列表主体
+  .el-main {
+    padding: 0;
+    min-height: 0;
+    height: 0;
+    overflow-y: hidden;
+    /deep/ > div {
+      height: 100%;
+    }
+
+    .el-table{
+      color: #666;
+      font-size: 14px;
+      .table-SelectedRow-bgcolor {
+        td{
+          background-color: #f0f7fd !important;
+        }
+      }
+      /* 表格-表头样式 */
+      .el-table__header{
+        /deep/ th {
+          background-color: #f8f8f8;
+          color: #333333;
+          font-size: 16px;
+          font-weight: normal;
+          border-top: 1px solid #E4E7ED;
+          border-bottom: 1px solid #E4E7ED;
+
+          > .cell {
+            color: initial;
+          }
+        }
+      }
+
+      /* 单元格高度扩充 */
+      /deep/ .el-table--small td, /deep/ .el-table--small th {
+        padding: 12px 0;
+      }
+
+      /* 单元格高度扩充 */
+      /deep/ .el-table--small td, /deep/ .el-table--small th {
+        padding: 12px 0;
+      }
+      .el-button-text-color{
+        margin: 0 10px;
+      }
+      .warning-row {
+        background-color: #fa9ec2;
+      }
+    }
+  }
+
+  .el-footer {
+    text-align: center;
+    border-top: 1px solid #E4E7ED;
+  }
+}
+
+/**** 分页 ****/
+.page-bar {
+  padding: 5px 0;
+  /* 页码 */
+  /deep/ .el-pager li {
+    min-width: 20px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    margin: 0 8px;
+    border-radius: 2px;
+    color: #666;
+    font-size: 12px;
+    font-weight: normal;
+
+    &.active {
+      color: #fff;
+      background-color: #1e87f0;
+    }
+  }
+
+  /* 左右翻页按钮 */
+  /deep/ .el-pagination button {
+    min-width: 20px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    margin: 0 8px;
+    border-radius: 2px;
+    padding: 0;
+    color: #FFF;
+    background-color: #C0C4CC;
+  }
+
+  /* 定位保持上下居中*/
+  /deep/ .el-pager, /deep/ .el-pagination button {
+    margin-top: 4px;
+  }
+
+  /* 输入框和下拉框高度 */
+  /deep/ .el-pagination .el-select .el-input .el-input__inner {
+    height: 20px;
+  }
+
+  /* 页码宽高 -*/
+  /deep/ .el-pagination__editor.el-input .el-input__inner {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/**** 添加/编辑表单 ****/
+.add-from {
+  /deep/ .el-input.is-disabled .el-input__inner {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  /deep/ .el-form-item__content > div.el-input,
+  /deep/ .el-form-item__content > div.el-select,
+  /deep/ .el-form-item__content > div.el-textarea,
+  /deep/ .el-form-item__content > div.vue-treeselect {
+    width: 300px;
+  }
+}
+
+.edit-page-new {
+  .el-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 14px;
+    padding-left: 28px;
+  }
+  .title {
+    position: relative;
+    &:before {
+      content: ' ';
+      width: 4px;
+      height: 15px;
+      border-radius: 2px;
+      background-color: #13ce66;
+      position: absolute;
+      left: -12px;
+      top: 4px;
+    }
+  }
+
+  .right-btn {
+    /deep/ .el-button {
+      border-radius: 2px !important;
+      font-size: 14px !important;
+      padding-top: 6px !important;
+      padding-bottom: 6px !important;
+      min-width: 78px;
+    }
+  }
+  /*主表单内容*/
+  .el-main{
+    .el-form{
+      .label-border{
+        margin-left: 40px;
+        border: 1px solid #ebe7e9;
+        padding: 15px 3px 16px 3px;
+        min-width: 65%;
+        max-width: 85%;
+        .el-row{
+          margin-top: 10px;
+          .el-form-item{
+            margin-bottom: 0;
+            .el-input{
+              min-width: 60px;
+            }
+          }
+          .small-btn{
+            .el-button{
+              position: absolute;
+              top: 9px;
+              margin-left: 10px;
+            }
+          }
+        }
+        .el-row:first-child{
+          margin-top: 0;
+        }
+
+      }
+    }
+  }
+
+  .footer-btn {
+    text-align: center;
+
+    /deep/ .el-button {
+      border-radius: 2px !important;
+      /*height: 38px;
+      min-width: 78px;*/
+    }
+  }
+  /*模块添加删除按钮样式 ==== START*/
+  .button-model-add{
+    background-color: #fff !important;
+    border: 2px solid #50b6ff;
+    padding: 4px !important;
+    top:10px;
+    i{
+      color:#50b6ff;
+      font-weight: bolder;
+    }
+  }
+  .button-model-add:hover,.button-model-add:focus, .button-model-add:visited{
+    background-color: #fff !important;
+    border-color:#50b6ff !important;
+  }
+
+  .button-model-del{
+    background-color: #fff !important;
+    border: 2px solid #f99997;
+    padding: 4px !important;
+    top:10px;
+    i{
+      color:#f99997;
+      font-weight: bolder;
+    }
+  }
+  .button-model-del:hover,.button-model-del:focus, .button-model-del:visited{
+    background-color: #fff !important;
+    border-color:#f99997 !important;
+  }
+  /*模块添加删除按钮样式 ==== END*/
+  /*el-input 样式整体调整*/
+  .elinput-300{
+    width: 300px;
+  }
+  .elinput-400{
+    width: 400px;
+  }
+}
+@media screen and (max-height: 950px) {
+  .edit-page-new{
+    max-height: 800px;
+  }
+}
+@media screen and (max-height: 840px) {
+  .edit-page-new{
+    max-height: 520px;
+  }
+}
+
+/* 单列表单 */
+.form-main-center {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* 表单底部按钮容器 */
+.form-footer-btn {
+  text-align: center;
+  padding: 10px 0;
+
+  /deep/ .el-button {
+    border-radius: 2px !important;
+    height: 38px;
+    min-width: 78px;
+  }
+}
+
+
+/**** tabs ****/
+/deep/ .el-tabs__nav {
+  border-radius: 2px 2px 0 0 !important;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/deep/ .el-tabs__item {
+  height: 36px;
+  line-height: 36px;
+  max-width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/deep/ .el-tabs__item.is-active {
+  max-width: none;
+  overflow: visible;
+  text-overflow: initial;
+}
+
+/**** dialog 弹窗 ****/
+/deep/ .el-dialog {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-height: 80%;
+
+  .el-dialog__body {
+    flex: 1;
+    min-height: 0;
+    height: 0;
+    overflow: scroll;
+  }
+}
+/*div里面文字行数限制--默认限制为2行*/
+.div-word-ellipsis{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}

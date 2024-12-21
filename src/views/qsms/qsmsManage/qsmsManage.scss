@@ -1,0 +1,180 @@
+.margin-24 {
+  margin: 24px 0;
+}
+
+.top-24 {
+  margin-top: 24px;
+}
+
+.bottom-24 {
+  margin-bottom: 24px;
+}
+
+.w40 {
+  width: 40px;
+}
+
+.clear {
+  clear: both;
+}
+
+
+.questionsDoList {
+  margin-bottom: 1em;
+  margin-left:100px;
+}
+
+
+.SortableItem {
+  display: block;
+  margin-top: 1em;
+  padding: 0 1em;
+  background: #fff;
+  border: 1px dashed #ddd;
+  user-select: none;
+  cursor: grab;
+
+  h5 {
+    line-height: 29px;
+  }
+
+  .el-button-group {
+    float: right;
+    position: relative;
+    z-index: 1;
+  }
+  .SortableItem-action{
+    .el-button{
+      border: 0;
+      font-size:14px;
+      padding: 7px;
+      color:#1A7CEE;
+    }
+  }
+
+  li {
+    line-height: 30px;
+    font-size: 14px;
+
+    em {
+      margin-left: 1em;
+      font-style: normal;
+    }
+  }
+}
+.SortableItem:hover{
+  border  : 1px solid #1E87F0;
+}
+
+.el-pagination {
+  text-align: right;
+}
+
+.el-table__expanded-cell li {
+  list-style-type: upper-alpha;
+}
+
+.scoreQuestion label {
+  float: none;
+  text-align: left;
+}
+
+.scoreQuestion .el-form-item__content {
+  // display: inline-block;
+}
+
+.el-color-dropdown__btns .el-color-dropdown__link-btn {
+  display: none;
+}
+
+// 添加问题弹窗
+.addQuestion{
+  max-height: 500px;
+  overflow: auto;
+  .SortableList{
+    // 无分值样式
+    .addQsTypeClass-nosort {
+      border:0;
+      width: 92.6%;
+      margin: 10px auto;
+      padding: 1px 30px;
+      .el-row{
+        border: 1px dashed #ddd;
+        padding: 15px 0;
+        //margin-left: -18px !important;
+        .el-col{
+          .el-form-item{
+            margin-bottom:1px;
+            .el-form-item__label{
+              width: 66px;
+              white-space: nowrap;
+            }
+            .el-input{
+              width: 87.5%;
+            }
+          }
+        }
+      }
+    }
+    .addQsTypeClass-nosort:first-child{
+      .el-form-item--mini.el-form-item, .el-form-item--small.el-form-item{
+        margin-bottom: 6px;
+      }
+    }
+    // 有分值样式
+    .addQsTypeClass-hassort{
+      width: 86%;
+      margin: 20px auto;
+    }
+  }
+  .add-question{
+    width: 84%;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 0.35em;
+    font-size: 1.5em;
+    color: rgb(196, 196, 196);
+    text-align: center;
+    border: 1px dashed #ddd;
+    cursor: pointer;
+  }
+  .addQuestion-ow{
+    width: 79.1%;
+    margin-left: 11.7%;
+  }
+}
+// 题库弹窗列表
+.dc-drawer {
+  padding: 0;
+  overflow-y: scroll;
+  height: 500px;
+  .drawer-body{
+    .el-form{
+      padding: 0 15px;
+    }
+    .tb-answer{
+      width: 100%;
+      height: 60%;
+      text-align: left;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      display:-webkit-box;
+      -webkit-box-orient:vertical;
+      -webkit-line-clamp:1;
+      padding: 6px 24px;
+      i{
+        color:#87baf1;
+        position: absolute;
+        top:20px;
+        left: 15px;
+      }
+    }
+    // 分页
+    .paginationDiv{
+      margin-top: 15px;
+      .el-pagination{
+        text-align: center !important;
+      }
+    }
+  }
+}

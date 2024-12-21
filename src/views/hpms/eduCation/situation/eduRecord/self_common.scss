@@ -1,0 +1,181 @@
+/**** 查询条件 ****/
+.query-items {
+  /* tree 组件 */
+  /deep/ .vue-treeselect__control {
+    width: auto;
+    color: #606266;
+  }
+
+  /deep/ .el-form-item__content div.el-input,
+  /deep/ .el-form-item__content div.el-select,
+  /deep/ .el-form-item__content div.el-date-editor.el-input,
+  /deep/ .el-form-item__content div.vue-treeselect {
+    width: 182px;
+  }
+}
+
+/**** 按钮栏 ****/
+.tool-bar {
+  padding: 12px;
+}
+
+/**** 查询条件和按钮栏的按钮 ****/
+.query-items,
+.tool-bar {
+  /deep/ .el-button {
+    border-radius: 2px !important;
+    font-size: 14px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    min-width: 78px;
+  }
+}
+
+/**** 主列表 ****/
+.main-list {
+  /deep/ .el-table {
+    color: #666;
+    font-size: 14px;
+  }
+
+  /* 表格-表头样式 */
+  /deep/ .el-table th {
+    background-color: #f7f7f7;
+    color: #333333;
+    font-size: 16px;
+    font-weight: normal;
+    border-top: 1px solid #E4E7ED;
+    border-bottom: 1px solid #E4E7ED;
+
+    > .cell {
+      color: initial;
+    }
+  }
+
+  /* 单元格高度扩充 */
+  /deep/ .el-table--small td, /deep/ .el-table--small th {
+    padding: 12px 0;
+  }
+}
+
+/**** 分页 ****/
+.page-bar {
+  padding: 5px 0;
+  /* 页码 */
+  /deep/ .el-pager li {
+    min-width: 20px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    margin: 0 8px;
+    border-radius: 2px;
+    color: #666;
+    font-size: 12px;
+    font-weight: normal;
+
+    &.active {
+      color: #fff;
+      background-color: #1e87f0;
+    }
+  }
+
+  /* 左右翻页按钮 */
+  /deep/ .el-pagination button {
+    min-width: 20px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    margin: 0 8px;
+    border-radius: 2px;
+    padding: 0;
+    color: #FFF;
+    background-color: #C0C4CC;
+  }
+
+  /* 定位保持上下居中*/
+  /deep/ .el-pager, /deep/ .el-pagination button {
+    margin-top: 4px;
+  }
+
+  /* 输入框和下拉框高度 */
+  /deep/ .el-pagination .el-select .el-input .el-input__inner {
+    height: 20px;
+  }
+
+  /* 页码宽高 -*/
+  /deep/ .el-pagination__editor.el-input .el-input__inner {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/**** 添加/编辑表单 ****/
+.add-from {
+  /deep/ .el-input.is-disabled .el-input__inner {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  /deep/ .el-form-item__content div.el-input,
+  /deep/ .el-form-item__content div.el-select,
+  /deep/ .el-form-item__content div.el-textarea,
+  /deep/ .el-form-item__content div.vue-treeselect {
+    width: 300px;
+  }
+}
+
+/* 单列表单 */
+.form-main-center {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* 表单底部按钮容器 */
+.form-footer-btn {
+  text-align: center;
+  padding: 10px 0;
+
+  /deep/ .el-button {
+    border-radius: 2px !important;
+    height: 38px;
+    min-width: 78px;
+  }
+}
+
+
+/**** tabs ****/
+/deep/ .el-tabs__nav {
+  border-radius: 2px 2px 0 0 !important;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/deep/ .el-tabs__item {
+  height: 36px;
+  line-height: 36px;
+  max-width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/deep/ .el-tabs__item.is-active {
+  max-width: none;
+  overflow: visible;
+  text-overflow: initial;
+}
+
+/**** dialog 弹窗 ****/
+/deep/ .el-dialog {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-height: 80%;
+
+  .el-dialog__body {
+    flex: 1;
+    min-height: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}

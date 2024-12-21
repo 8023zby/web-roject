@@ -1,0 +1,93 @@
+{
+  "id": "2061156",
+  "name": "中台",
+  "font_family": "upbsFont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "18585065",
+      "name": "切换",
+      "font_class": "qiehuan",
+      "unicode": "e6a3",
+      "unicode_decimal": 59043
+    },
+    {
+      "icon_id": "17425499",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "17425500",
+      "name": "敏捷",
+      "font_class": "minjie",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "17425501",
+      "name": "闸机",
+      "font_class": "zhaji",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "17425502",
+      "name": "账户",
+      "font_class": "zhanghu",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "17425503",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "17406728",
+      "name": "组织",
+      "font_class": "zuzhi",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "17406729",
+      "name": "终端",
+      "font_class": "yijidaohangzhongduan",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "17161413",
+      "name": "登录框密码",
+      "font_class": "denglukuangmima",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "17161416",
+      "name": "登录框用户名",
+      "font_class": "denglukuangyonghuming",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "17161417",
+      "name": "位置点",
+      "font_class": "weizhidian",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "17161418",
+      "name": "登录框验证码",
+      "font_class": "denglukuangyanzhengma",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "2289795",
+  "name": "排班--护理标签",
+  "font_family": "iconfont-hsms",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15775724",
+      "name": "五角星",
+      "font_class": "wujiaoxing-01",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "18420050",
+      "name": "空心三角",
+      "font_class": "kongxinsanjiao",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "18420071",
+      "name": "实心三角",
+      "font_class": "shixinsanjiao",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "18715826",
+      "name": "听当日连班",
+      "font_class": "wujiaoxing-01-02",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "18715828",
+      "name": "年休假",
+      "font_class": "wujiaoxing-01-03",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "18715829",
+      "name": "连班",
+      "font_class": "wujiaoxing-01-04",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "18715830",
+      "name": "听所标班次",
+      "font_class": "wujiaoxing-01-05",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "18747947",
+      "name": "医院机动护士-01",
+      "font_class": "yiyuanjidonghushi-01",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    }
+  ]
+}

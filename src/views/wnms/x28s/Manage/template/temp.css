@@ -1,0 +1,127 @@
+.content-title {
+  position: relative;
+  overflow: hidden;
+  animation: mymove 1s;
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* 主样式 */
+.main_view_x28s {
+  height: 517px;
+  width: 1920px;
+  border: 1px solid #3bc0ee;
+}
+
+/* 外面大div */
+.bgimage {
+  background: url("../../assets/img/viewbg.png") no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* 左边内容 */
+.content-Left {
+  width: 520px;
+  margin-left: 1rem;
+}
+
+.content-left-div {
+  width: 90%;
+}
+
+/* 左边内容 logo */
+.logo {
+  padding-top: 10px;
+  width: 90px;
+  height: 90px;
+}
+
+/* 左边内容护理单元 */
+.nursing {
+  font-size: 1.1cm;
+  color: aliceblue;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* 左边内容时间 */
+.dateTime {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+/* 左边内容年月日 */
+.time {
+  font-size: 4cm;
+  color: aliceblue;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* 左边内容样式 */
+.datebg {
+  background: #67e9ec;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 1rem;
+}
+
+/* 左边内容年月日样式 */
+.dateCss {
+  font-size: 0.9cm;
+  color: #4364a6;
+}
+
+/* 右边内容 */
+.content-Main {
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  height: 517px;
+}
+
+/* 右边内容标题 */
+.title {
+  font-size: 0.9cm;
+  font-weight: 350;
+  display: block;
+  width: 100%;
+  padding-top: 3%;
+  color: #3879c9;
+  text-align: center;
+}
+
+/* 右边内容横线 */
+.line {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* 右边内容div */
+.content {
+  height: 80%;
+  overflow: hidden;
+}
+
+/* 右边内容文字 */
+.font-content {
+  width: 100%;
+  display: inline-block;
+  margin-top: 10px;
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+.minititle {
+  font-size: 0.7cm;
+  font-weight: 350;
+}
+
+.font-content p img {
+  width: 100%;
+}

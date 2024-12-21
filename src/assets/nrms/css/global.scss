@@ -1,0 +1,215 @@
+///***  tooltip 一个bug：内容超过一屏时，定位会出现问题，导致部分内容看不见，所以把宽度设置个最大
+.el-tooltip__popper {
+  max-width: 80%;
+}
+
+//按钮统一圆角像素
+.el-button--medium {
+  border-radius: 2px;
+}
+
+//黄色按钮
+.el-button--yellow {
+  color: #FFF;
+  background-color: #FFCB2B;
+  border-color: #FFCB2B
+}
+
+.el-button--yellow:focus, .el-button--yellow:hover {
+  background: #ffd555;
+  border-color: #ffd555;
+  color: #FFF
+}
+
+.el-button--yellow.is-active, .el-button--yellow:active {
+  background: #efc131;
+  border-color: #efc131;
+  color: #FFF
+}
+
+.el-button--yellow:active {
+  outline: 0
+}
+
+.el-button--yellow.is-disabled, .el-button--yellow.is-disabled:active, .el-button--yellow.is-disabled:focus, .el-button--yellow.is-disabled:hover {
+  color: #FFF;
+  background-color: #ffd555;
+  border-color: #ffd555
+}
+
+.el-button--yellow.is-plain {
+  color: #FFCB2B;
+  background: #FFCB2B;
+  border-color: #FFCB2B
+}
+
+.el-button--yellow.is-plain:focus, .el-button--yellow.is-plain:hover {
+  background: #FFCB2B;
+  border-color: #FFCB2B;
+  color: #FFF
+}
+
+.el-button--yellow.is-plain:active {
+  background: #FFCB2B;
+  border-color: #FFCB2B;
+  color: #FFF;
+  outline: 0
+}
+
+.el-button--yellow.is-plain.is-disabled, .el-button--yellow.is-plain.is-disabled:active, .el-button--yellow.is-plain.is-disabled:focus, .el-button--yellow.is-plain.is-disabled:hover {
+  color: #efc131;
+  background-color: #FFCB2B;
+  border-color: #FFCB2B
+}
+
+//灰色按钮
+.el-button--gray {
+  color: #FFF;
+  background-color: #DCDFE6;
+  border-color: #DCDFE6
+}
+
+.el-button--gray:focus, .el-button--gray:hover {
+  background: #DCDFE6;
+  border-color: #DCDFE6;
+  color: #FFF
+}
+
+.el-button--gray.is-active, .el-button--gray:active {
+  background: #DCDFE6;
+  border-color: #DCDFE6;
+  color: #FFF
+}
+
+.el-button--gray:active {
+  outline: 0
+}
+
+.el-button--gray.is-disabled, .el-button--gray.is-disabled:active, .el-button--gray.is-disabled:focus, .el-button--gray.is-disabled:hover {
+  color: #FFF;
+  background-color: #DCDFE6;
+  border-color: #DCDFE6
+}
+
+.el-button--gray.is-plain {
+  color: #DCDFE6;
+  background: #DCDFE6;
+  border-color: #DCDFE6
+}
+
+.el-button--gray.is-plain:focus, .el-button--gray.is-plain:hover {
+  background: #DCDFE6;
+  border-color: #DCDFE6;
+  color: #FFF
+}
+
+.el-button--gray.is-plain:active {
+  background: #DCDFE6;
+  border-color: #DCDFE6;
+  color: #FFF;
+  outline: 0
+}
+
+.el-button--gray.is-plain.is-disabled, .el-button--gray.is-plain.is-disabled:active, .el-button--gray.is-plain.is-disabled:focus, .el-button--gray.is-plain.is-disabled:hover {
+  color: #DCDFE6;
+  background-color: #DCDFE6;
+  border-color: #DCDFE6
+}
+
+//红色文字按钮
+.el-button--text, .el-button--textred.is-disabled, .el-button--textred.is-disabled:focus, .el-button--textred.is-disabled:hover, .el-button--textred:active {
+  border-color: transparent
+}
+
+.el-button.is-disabled.el-button--textred {
+  background-color: transparent;
+}
+
+.el-button--textred {
+  color: red;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.el-button--textred:focus, .el-button--textred:hover {
+  color: red;
+  border-color: transparent;
+  background-color: transparent
+}
+
+.el-button--textred:active {
+  color: red;
+  background-color: transparent
+}
+
+//添加/修改 表单
+.nrms_add_form {
+  .title {
+    text-align: left;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 0px 10px 30px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .container {
+    padding: 30px;
+  }
+}
+
+.nrms_page {
+  padding: 5px;
+  //分页靠右
+  .el-pagination {
+    float: right;
+  }
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+// 滚动条的宽度
+::-webkit-scrollbar {
+  width: 6px; // 横向滚动条
+  height: 6px; // 纵向滚动条 必写
+  width: 7px; // 横向滚动条
+  height: 7px; // 纵向滚动条 必写
+}
+// 滚动条的滑块
+::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 3px;
+}
+
+/***
+添加页面样式
+*****/
+.nrms-add-container{
+  padding-top:30px;
+  width: 500px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  .add-btn-div{
+    text-align: center;
+  }
+}
+/*********弹窗form**********/
+.nrms-add-dialog{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  .el-form-item__content{
+    .el-select{
+      width: 100%;
+    }
+    .el-input-number{
+      width: 100%;
+    }
+  }
+  border-radius: 3px 3px;
+}

@@ -1,0 +1,357 @@
+/***
+列表样式 ====== 开始
+****/
+$tdBgColor: var(--IeBrower, #ffffff);
+.typt-list-main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.typt-list-container{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .el-table td{
+    position: static;
+  }
+  .el-table--striped .el-table__body tr.el-table__row--striped>td {
+    @if $tdBgColor == #ffffff {
+      background: #FCFCFC;
+    }
+  }
+  // hover 样式
+  .el-table--enable-row-hover .el-table__body tr:hover > td{
+    background: $tdBgColor !important;
+  }
+  .hover-row{
+    td {
+      background: $tdBgColor !important;
+    }
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0px 0px 6px 0px rgba(124,124,124,0.3);
+  }
+  tr:hover{
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0px 0px 6px 0px rgba(124,124,124,0.3);
+  }
+  // 正常搜索、添加等动作按钮
+  .el-button--small, .el-button--small.is-round {
+    font-size: 14px;
+    height: 28px;
+    padding: 5px 10px;
+    min-width: 78px;
+    border-radius: 2px;
+  }
+  .el-button--text{
+    min-width: 30px !important;
+  }
+  .el-form{
+    margin-left: 20px;
+  }
+  .el-form-item {
+    box-sizing: border-box;
+    height: 58px;
+    margin-bottom: 0px;
+    padding-top: 13px;
+    margin-right: 24px;
+  }
+  .typt-list-search, .demo-form-inline{
+    .el-form-item__label{
+      color: #666666;
+      line-height: 34px;
+      padding: 0 8px 0 0;
+    }
+    .el-input--small .el-input__inner {
+      height: 34px;
+      line-height: 34px;
+      width: 182px;
+    }
+    .vue-treeselect{
+      width: 182px !important;
+    }
+    .is-reverse{
+      color: #1e87f0 !important;
+    }
+  }
+  .typt-search-btn{
+    margin-left: 16px;
+  }
+  .typt-search-btn button:nth-child(2){
+    margin-left: 11px;
+  }
+  .el-table__header{
+    border-top: 1px solid #e6e6e6;
+   }
+  hr{
+    height:1px;
+    border:none;
+    background-color: #e6e6e6;
+    margin-block-start: 0em !important;
+    margin-block-end: 0em !important;
+  }
+  .el-table--small {
+    font-size: 14px !important;
+  }
+  .el-table th {
+    font-weight: normal !important;
+  }
+  .el-table th>.cell{
+    font-size: 16px;
+    color: #333333;
+  }
+  .el-table__header th{
+    background: #F7F7F7;
+    padding: 3px 0 !important;
+    height: 48px;
+  }
+  .is-group th{
+    padding: 3px 0 !important;
+    height: 24px;
+  }
+  .is-group th>.cell{
+    font-size: 14px;
+  }
+  .el-table td {
+    padding: 3px 0 !important;
+    height: 48px;
+  }
+  // 添加页面
+  .typt-list-add-div{
+    height: 54px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    padding-top: 13px;
+  }
+  .action_div{
+    text-align: right;
+    float: right;
+    padding-right: 16px;
+    button{
+      margin-left: 25px;
+    }
+  }
+  .typt-row-color td{
+    background: #EEF7FE !important;
+  }
+}
+/******添加编辑页面的样式*********/
+.typt-tit-cls{
+  background: #f7f7f7;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.typt-tit-logo{
+  height: 15px;
+  width: 4px;
+  background: #14C68F;
+  border-radius: 4px;
+  margin-left: 18px;
+}
+.typt-tit-content{
+  margin-left: 12px;
+  color: #333333;
+  font-size: 14px;
+  line-height: 48px;
+}
+.typt-add-container{
+  width: 100%;
+  flex: 1;
+  overflow: auto;
+  box-sizing: border-box;
+  /******form表单相关**********/
+/*  .el-form-item__content{
+    .el-select{
+      width: 100%;
+    }
+  }*/
+  .el-input--small .el-input__inner {
+    height: 34px;
+    line-height: 34px;
+  }
+  .el-input-number{
+    width: 300px;
+  }
+  .vue-treeselect{
+    width: 300px !important;
+  }
+  .el-input--small,.el-textarea{
+    width: 300px;
+  }
+  .el-form-item__label{
+    padding-right: 8px;
+    color:#666666;
+  }
+  .el-form-item--mini.el-form-item, .el-form-item--small.el-form-item {
+    margin-bottom: 27px;
+  }
+  // 正常搜索、添加等动作按钮
+  .el-button--small, .el-button--small.is-round {
+    font-size: 14px;
+    height: 28px;
+    padding: 5px 10px;
+    min-width: 78px;
+    border-radius: 2px;
+  }
+  .is-reverse{
+    color: #1e87f0 !important;
+  }
+}
+
+// 翻页
+.paginationDiv{
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .el-pagination.is-background .btn-prev{
+    background: #E7E7E7;
+    color: #ffffff;
+    height: 20px;
+    margin: 5px 5px;
+    min-width: 20px;
+  }
+  .el-pagination.is-background .el-pager li:not(.disabled).active {
+    color: #ffffff !important;
+    background: #1e87f0 !important;
+    height: 20px;
+    min-width: 20px;
+    margin-top: 5px;
+    line-height: 20px !important;
+  }
+  .el-pagination span:not([class*=suffix]){
+    font-size: 12px;
+  }
+  .el-input--mini .el-input__inner {
+    height: 22px;
+    line-height: 22px;
+    color:#d1d2d3;
+    font-size: 12px !important;
+  }
+  .el-icon-arrow-up{
+    color:#d1d2d3 !important;
+  }
+  .el-icon-circle-close:hover{
+    color: #1C87F0 !important;
+  }
+  .el-pagination__jump{
+    margin-left: 40px;
+  }
+  .el-input--mini .el-input__icon {
+    line-height: 22px;
+  }
+  .el-pagination__editor.el-input .el-input__inner {
+    height: 20px;
+    font-size: 12px !important;
+    line-height: 20px;
+  }
+  .el-pagination__sizes {
+    margin: 0 43px 0 0;
+  }
+  .el-pagination.is-background .el-pager li{
+    background: none !important;
+    color:#666666 !important;
+    line-height: 30px !important;
+    font-size: 12px;
+  }
+  .el-pagination__editor{
+    height: 22px !important;
+  }
+  .el-pagination__editor.el-input {
+    width: 30px;
+  }
+  .el-pagination.is-background .btn-next{
+    background: #E7E7E7 !important;
+    color: #ffffff !important;
+    height: 20px;
+    margin: 5px 5px;
+    min-width: 20px;
+  }
+  .el-pagination__total{
+    color: #717171;
+  }
+  .is-in-pagination{
+    margin-left: 5px;
+    margin-right: 5px;
+    .el-input__inner{
+      width: 20px;
+    }
+  }
+}
+.typt-add-form{
+  padding-top:40px;
+  height: 100%;
+  box-sizing: border-box;
+  .add-btn-div{
+    text-align: center;
+  }
+
+}
+.typt-add-footer{
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-top: 1px solid #EEEEEE;
+  .el-button{
+    min-width: 70px;
+    height: 38px;
+    font-size: 14px;
+    margin-left: 16px !important;
+    border-radius: 2px !important;
+  }
+}
+@media screen and (max-height: 768px) {
+  .typt-list-container{
+    .el-table{
+      height: 72% !important;
+    }
+  }
+}
+/*********添加form**********/
+.typt-add-dialog{
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  .el-form-item {
+    margin-bottom: 27px;
+  }
+  .el-form-item__label{
+    padding-right: 8px;
+    color:#666666;
+  }
+  .el-input--small .el-input__inner {
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+  }
+  .el-form-item--small .el-form-item__content{
+    line-height: 46px;
+  }
+  .el-form-item--small .el-form-item__label {
+    line-height: 46px;
+  }
+  .vue-treeselect__placeholder, .vue-treeselect__single-value{
+    line-height: 46px !important;
+  }
+  .is-reverse{
+    color: #1e87f0 !important;
+  }
+  .vue-treeselect{
+    height: 46px !important;
+    line-height: 46px !important;
+  }
+  .el-form-item__content{
+    .el-select{
+      width: 100%;
+    }
+    .el-input-number{
+      width: 100%;
+    }
+  }
+}

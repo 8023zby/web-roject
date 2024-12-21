@@ -1,0 +1,36 @@
+/deep/ .el-form-item__label {
+  height: 33px;
+}
+/deep/ .el-icon-arrow-up::before {
+  content: "\e78f";
+  color: #05B06E;
+}
+/deep/ .el-input__inner {
+  border-radius: 20px !important;
+}
+/deep/ .el-date-editor.el-input, .el-date-editor.el-input__inner {
+  .el-input__inner {
+    background-color: #5281EB;
+    color: #fff;
+  }
+  .el-input__prefix {
+    right: -30px;
+    left: initial;
+    color: #5281EB;
+    font-size: 20px;
+  }
+}
+/deep/ .el-button {
+  border-radius: 5px !important;
+}
+/deep/ .el-radio {
+  margin-right: 10px;
+}
+
+/deep/ .el-input, .el-select {
+  width: 100%;
+}
+
+/deep/ [class*=el-col-] {
+  padding-right: 15px;
+}

@@ -1,0 +1,139 @@
+/******按钮相关*************/
+.el-button--primary, .el-button--primary:focus, .el-button--primary:visited{
+  background-color: #1e87f0 !important;
+  border-color: #1e87f0 !important;
+}
+.el-button--warning, .el-button--warning:focus, .el-button--warning:visited{
+  background-color: #ff9d00 !important;
+  border-color: #ff9d00 !important;
+}
+.el-button--danger, .el-button--danger:focus, .el-button--danger:visited{
+  background-color: #f56c6c !important;
+  border-color: #f56c6c !important;
+}
+.el-button--success, .el-button--success:focus, .el-button--success:visited {
+  background-color: #14C68F !important;
+  border-color: #14C68F !important;
+}
+.el-button--success:hover{
+  background: #78DDBC !important;
+  border-color: #78DDBC !important;
+}
+.el-button--success:active{
+  background: #20a179 !important;
+  border-color: #20a179 !important;
+}
+.el-button--warning:hover{
+  background: #ffc466 !important;
+  border-color: #ffc466 !important;
+}
+.el-button--danger:hover{
+  background: #f9a8a7 !important;
+  border-color: #f9a8a7 !important;
+}
+.el-button--primary:hover{
+  background: #77b7f5 !important;
+  border-color: #77b7f5 !important;
+}
+.el-button--primary:active{
+  background: #1b7ad8 !important;
+  border-color: #1b7ad8 !important;
+}
+.el-button--warning:active{
+  background: #e68c00 !important;
+  border-color: #e68c00 !important;
+}
+.el-button--danger:active{
+  background: #dd6161 !important;
+  border-color: #dd6161 !important;
+}
+.el-text-danger{
+  color: #f56c6c;
+  cursor: pointer;
+  margin: 0 20px;
+}
+.el-button-text-color{
+  color: #409EFF;
+  cursor: pointer;
+  margin: 0 20px;
+}
+.el-button--small.is-round {
+  border-radius: 20px !important;
+}
+.el-button-radius{
+  border-radius: 4px !important;
+}
+.el-button--primary.is-disabled,
+.el-button--primary.is-disabled:active,
+.el-button--primary.is-disabled:focus,
+.el-button--primary.is-disabled:hover,
+.el-button--warning.is-disabled,
+.el-button--warning.is-disabled:active,
+.el-button--warning.is-disabled:focus,
+.el-button--warning.is-disabled:hover,
+.el-button--danger.is-disabled,
+.el-button--danger.is-disabled:active,
+.el-button--danger.is-disabled:focus,
+.el-button--danger.is-disabled:hover{
+  background-color: #B5B5B5 !important;
+  border-color: #B5B5B5 !important;
+}
+/*****输入框圆角缩小********/
+.el-input, .el-select, .el-textarea, .el-input__inner, .vue-treeselect__control {
+  border-radius: 2px !important;
+}
+// 确认等高度变化按钮
+.el-button-confirm-btn{
+  font-size: 14px;
+  padding: 5px 10px;
+  height: 38px;
+  min-width: 70px;
+}
+// 表单内打印等高度变化按钮
+.el-button-form-btn{
+  font-size: 14px;
+  padding: 5px 10px;
+  height: 28px;
+  min-width: 55px;
+}
+// 标准按钮
+.el-small-btn{
+  font-size: 14px;
+  height: 28px;
+  padding: 5px 10px;
+  min-width: 78px;
+}
+// 幽灵按钮
+.el-button--primary.is-plain,
+.el-button--warning.is-plain,
+.el-button--danger.is-plain {
+  background-color: #ffffff !important;
+}
+.el-button--success.is-plain:hover{
+  color: #78DDBC !important;
+}
+.el-button--success.is-plain:active{
+  color: #20a179 !important;
+}
+.el-button--warning.is-plain:hover{
+  color: #ffc466 !important;
+}
+.el-button--danger.is-plain:hover{
+  color: #f9a8a7 !important;
+}
+.el-button--primary.is-plain:hover{
+  color: #77b7f5 !important;
+}
+.el-button--primary.is-plain:active{
+  color: #1b7ad8 !important;
+}
+.el-button--warning.is-plain:active{
+  color: #e68c00 !important;
+}
+.el-button--danger.is-plain:active{
+  color: #dd6161 !important;
+}
+// button按钮去掉加粗
+.el-button--text span{
+  font-weight: normal;
+}

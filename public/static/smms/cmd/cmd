@@ -1,0 +1,5 @@
+cnpm install --save echarts
+cnpm install --save sortablejs
+cnpm install  --save vue-image-crop-upload@2.5.0
+cnpm install --save vue-quill-editor
+cnpm install --save vue-slicksort

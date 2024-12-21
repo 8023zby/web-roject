@@ -1,0 +1,27 @@
+/**** header相关CSS ****/
+
+/deep/ ul{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+  width:100%;
+  clear:both;
+  display:table;
+  li{
+    margin:0;
+    display:inline-block;
+    text-align:left;
+    padding:0 20px;
+  }
+  li.fr{
+    float:right;
+    padding-right:30px;
+  }
+}
+/deep/ ul.tableCell{
+  display:table;
+  li{
+    display:table-cell;
+    text-align:center;
+  }
+}

@@ -1,0 +1,84 @@
+.margin-24 {
+  margin: 24px 0;
+}
+
+.top-24 {
+  margin-top: 24px;
+}
+
+.bottom-24 {
+  margin-bottom: 24px;
+}
+
+.w40 {
+  width: 40px;
+}
+
+.clear {
+  clear: both;
+}
+
+.add-question {
+  margin-top: 15px;
+  padding: 0.35em;
+  font-size: 1.5em;
+  color: rgb(196, 196, 196);
+  text-align: center;
+  border: 1px dashed #ddd;
+  cursor: pointer;
+}
+
+.questionsDoList {
+  margin-bottom: 1em;
+}
+
+.SortableItem {
+  display: block;
+  margin-top: 1em;
+  padding: 0 1em;
+  background: #fff;
+  border: 1px dashed #ddd;
+  user-select: none;
+  cursor: grab;
+
+  h5 {
+    line-height: 29px;
+  }
+
+  .el-button-group {
+    float: right;
+    position: relative;
+    z-index: 1;
+  }
+
+  li {
+    line-height: 30px;
+    font-size: 14px;
+
+    em {
+      margin-left: 1em;
+      font-style: normal;
+    }
+  }
+}
+
+.el-pagination {
+  text-align: right;
+}
+
+.el-table__expanded-cell li {
+  list-style-type: upper-alpha;
+}
+
+.scoreQuestion label {
+  float: none;
+  text-align: left;
+}
+
+.scoreQuestion .el-form-item__content {
+  // display: inline-block;
+}
+
+.el-color-dropdown__btns .el-color-dropdown__link-btn {
+  display: none;
+}

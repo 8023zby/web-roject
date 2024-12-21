@@ -1,0 +1,2 @@
+<link type="text/css" rel="stylesheet" href="./static/nams/layui/css/layui.css"/>
+<script type="text/javascript" src="./static/nams/layui/layui.js"></script>

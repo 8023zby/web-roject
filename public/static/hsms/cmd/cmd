@@ -1,0 +1,3 @@
+cnpm install --save jquery
+cnpm install --save print-js
+cnpm install jsdom location navigator xmlhttprequest

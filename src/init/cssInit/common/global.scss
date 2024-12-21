@@ -1,0 +1,53 @@
+/***
+全局样式设置
+**/
+body,html{
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  overflow: auto;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content : space-around;
+}
+// 01 色彩规范
+$primary: #1e87f0;
+$success: #13ce66;
+$warning: #ff9d00;
+$danger: #f56c6c;
+$font3: #333333;
+$font6: #666666;
+$font9: #999999;
+$fontC: #cccece;
+$formColor: #b2b2b2;
+$hrBorder: #ebebeb;
+$bgColor: #fbfcfd;
+// 实线虚线
+.yarward-line{
+  border: 1px solid #b3bfbf;
+}
+.yarward-dash{
+  border: 1px dashed #b3bfbf;
+}
+// 基础投影
+.yarward-base-shadow{
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,1);
+}
+// 深色投影
+.yarward-dark-shadow{
+  box-shadow: 0 2px 6px rgba(0,0,0,.12);
+}
+// 滚动条
+::-webkit-scrollbar{width:8px;height:8px;}
+::-webkit-scrollbar-track{background-color:#fff;}
+::-webkit-scrollbar-thumb{background-color:#eee; border-radius: 8px;}
+::-webkit-scrollbar-thumb:hover {background-color:#bababa}
+::-webkit-scrollbar-thumb:active {background-color:#bababa}

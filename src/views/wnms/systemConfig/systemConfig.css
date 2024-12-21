@@ -1,0 +1,74 @@
+.image {
+  width: 100%;
+}
+
+.w60 {
+  width: 60px !important;
+}
+
+.w80 {
+  width: 80px !important;
+}
+
+.w100 {
+  width: 100px !important;
+}
+
+.w120 {
+  width: 120px !important;
+}
+
+.w150 {
+  width: 150px !important;
+}
+
+.el-color-dropdown__main-wrapper,
+.el-color-alpha-slider {
+  display: none;
+}
+
+/* 选择科室名称下的颜色选择器不隐藏色板 */
+.dept-popper .el-color-dropdown__main-wrapper,
+.dept-popper .el-color-alpha-slider {
+  display: block;
+}
+
+.el-color-predefine__color-selector {
+  padding: 2px;
+  border: 1px solid #ddd;
+}
+
+.light-select:before,
+.volume-select:before {
+  display: inline-block;
+  content: "\E6F6";
+  width: 1em;
+  height: 1em;
+  font-family: element-icons !important;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  color: #c0c4cc;
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 0;
+  left: 0.7em;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.volume-select:before {
+  content: "";
+  background: url("../../../assets/wnms/img/icons_volume.png") center / contain no-repeat;
+}
+
+.light-select input,
+.volume-select input {
+  padding-left: 2.35em;
+}
